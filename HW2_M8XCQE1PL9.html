@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Javascript DOM Manipulation</title>
+  </head>
+  <body>
+    <button id="date-button">GET DATE</button>
+    <p id="date-result"></p>
+    <script>
+      const dateButton = document.getElementById("date-button");
+      const dateResult = document.getElementById("date-result");
+      const getdate = function () {
+        dateResult.textContent = Date();
+      };
+      dateButton.addEventListener("click", getdate);
+    </script>
+  </body>
+</html>
